@@ -1062,13 +1062,13 @@ section {
 ========================= */
 
 .contact-container {
-    max-width: 900px;
+    max-width: 1050px;
     margin: 35px auto 0;
 
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 
-    gap: 22px;
+    gap: 20px;
 }
 
 .contact-card {
@@ -1860,4 +1860,55 @@ footer {
         text-align: center;
     }
 
+}
+/* =========================
+   CONTACT LINKS
+========================= */
+
+.contact-link-card {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    text-decoration: none;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.contact-link-card h3 {
+    margin: 5px 0;
+}
+
+.contact-link-card p {
+    margin: 0;
+}
+
+.contact-arrow {
+    margin-left: auto;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(56, 189, 248, 0.25);
+
+    border-radius: 50%;
+
+    color: #38bdf8;
+
+    transition: 0.3s ease;
+}
+
+.contact-link-card:hover .contact-arrow {
+    background: #38bdf8;
+    color: #0f172a;
+    transform: rotate(45deg);
 }
